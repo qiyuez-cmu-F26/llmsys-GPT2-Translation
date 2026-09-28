@@ -1,8 +1,8 @@
 # GPT-2-Style Transformer for German→English Translation
 
-A decoder-only Transformer language model, trained end-to-end for German→English machine translation on IWSLT14. The model is implemented on miniTorch, a small deep learning framework with its own tensor library and autodiff, and trained on a V100 GPU on the PSC Bridges-2 cluster.
+A decoder-only Transformer language model, trained end-to-end for German→English machine translation on IWSLT14. The model is implemented on **miniTorch**, a small deep learning framework with its own tensor library and autodiff, and trained on a V100 GPU on the PSC Bridges-2 cluster.
 
-> Course project for CMU 11868 LLM Systems.
+> Course project for CMU 11868 *Large Language Model Systems*.
 > Source code is not published here because this is a graded course assignment. This repo contains the design write-up, experiment results and analysis. I'm happy to walk through the code in an interview.
 
 ## Highlights
@@ -16,9 +16,9 @@ A decoder-only Transformer language model, trained end-to-end for German→Engli
 
 ## Results
 
-![Training curve](learning_curve.png)
+![Training curve](results/learning_curve.png)
 
-Final configuration: learning rate 0.001, 20 epochs. Full per-epoch numbers are in [`eval_summary.csv`](eval_summary.csv).
+Final configuration: learning rate 0.001, 20 epochs. Full per-epoch numbers are in [`results/eval_summary.csv`](results/eval_summary.csv).
 
 | Epoch | Validation loss | BLEU |
 |---:|---:|---:|
@@ -115,7 +115,7 @@ scripts/plot_results.py       regenerates the table and plot
 - Xiong et al., [*On Layer Normalization in the Transformer Architecture*](https://arxiv.org/abs/2002.04745)
 - [miniTorch](https://minitorch.github.io)
 - [SacreBLEU](https://github.com/mjpost/sacrebleu)
-- Course: CMU 11868 Large Language Model Systems (add the course page link)
+- Course: [CMU 11868 Large Language Model Systems](https://github.com/llmsystem/llmsys_hw3)
 
 ## Acknowledgements
 
